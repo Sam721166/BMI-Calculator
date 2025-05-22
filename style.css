@@ -11,17 +11,10 @@
 .body1{
     display: flex;
 }
-@font-face {
-    font-family: myfont1;
-    src: url(../fonts/Inter_28pt-SemiBold.ttf);
-}
-@font-face {
-    font-family: myfont2;
-    src: url(../fonts/Inter_28pt-Regular.ttf);
-}
+
 @font-face {
     font-family: myfont3;
-    src: url(../fonts/soria-font.ttf);
+    src: url(soria-font.ttf);
 }
 
 
@@ -43,15 +36,17 @@
 #bmi-h1-id1{
    border-bottom: #67ff01 7px solid;
     width: 300px;
+    height: 180px;
 }
 #bmi-h1-id2{
     border-bottom: #67ff01 7px solid;
     width: 720px;
+    padding-bottom: 0rem;
+    height: 180px;
 }
 .bmi-h1{
-    
-    font-family: myfont1;
-    font-size: 9rem;
+    font-family: myfont3;
+    font-size: 10rem;
     font-weight: 400;
     color: rgb(0, 0, 0);
     
@@ -86,6 +81,7 @@
     /* border-bottom: solid 3px rgb(115, 255, 0); */
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
+    text-align: center;
 
     animation: slideFromleft 1.2s ease forwards;
     opacity: 0;
@@ -98,16 +94,16 @@
 
     background-color: #74ff1893;
     /* border: solid 3px rgb(77, 255, 0); */
-    padding: 2.6rem;
+    padding: 2.2rem;
     border-radius: 15px;
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+    align-items: start;
     gap: 0.6em;
     /* box-shadow: 0px 0px 0px 0px rgb(85, 255, 0); */
-    margin-top: 0.4rem;
+    margin-top: 0.3rem;
 
 }
 .guide-h1{
@@ -117,8 +113,8 @@
 }
 .p2{
     padding-top: 2px;
-    font-family: myfont2;
-    font-size: 1.1rem;
+    font-family: myfont3;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -126,9 +122,9 @@
 .right{
     display: flex;
     flex-direction: column;
-    background-color: #95ff4e2e;
+    background-color: #95ff4e36;
     border-radius: 15px;
-    max-height: 850px;
+    max-height: 680px;
     width: 42vw;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -156,9 +152,10 @@
 
 #label1{
     background-color: #67ff01;
-    padding: 13px 90px;
+    padding: 8px 90px;
     border-radius: 5px;
-    font-family: myfont2;
+    font-family: myfont3;
+    font-size: 1.5rem;
     margin-right: 20px;
     border: 2px solid rgb(142, 142, 142);
 }
@@ -221,6 +218,11 @@
         flex-direction: column;
         align-items: center;
     }
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .left {
         margin: 1rem 0.5rem;
         align-items: center;
@@ -228,6 +230,11 @@
     #bmi-h1-id2 {
         width: 90vw;
         font-size: 4rem;
+        height: 90px;
+    }
+    #bmi-h1-id1 {
+        height: 90px;
+        width: 40vw;
     }
     .bmi-h1 {
         font-size: 4rem;
@@ -258,12 +265,12 @@
     }
     .button1 {
         padding: 10px 0;
-        width: 100%;
+        width: 75vw;
         font-size: 1.4rem;
     }
     .result-p {
         font-size: 1.2rem;
-        width: 100%;
+        width: 75vw;
     }
     #result {
         font-size: 2rem;
@@ -273,13 +280,26 @@
     }
 }
 
+
 @media (max-width: 600px) {
     .bmi-h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 2.2rem;
+        text-align: center;
+    }
+    .bmi-p1{
+        font-family: 1rem;
     }
     #bmi-h1-id2 {
         font-size: 2.2rem;
         width: 90vw;
+        text-align: center;
+        height: 50px;
+    }
+    #bmi-h1-id1 {
+        height: 50px;
     }
     .left, .right {
         margin: 0.5rem 0.5rem;
@@ -287,10 +307,16 @@
     }
     #weight-guide {
         padding: 0.8rem;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+    }
+    .guide-h1{
+        font-size: 1.6rem;
+    }
+    .p2{
+        font-size: 1.2rem;
     }
     .input1 {
-        padding: 8px 4vw;
+        padding: 8px 1vw;
         font-size: 1rem;
     }
     #label1 {
@@ -300,6 +326,7 @@
     .button1 {
         font-size: 1.2rem;
         padding: 8px 0;
+        width: 75vw;
     }
     #result {
         font-size: 1.2rem;

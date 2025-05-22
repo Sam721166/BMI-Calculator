@@ -347,4 +347,9 @@
     #comment {
         font-size: 1.2rem;
     }
+    .footer{
+    color: rgb(65, 65, 65);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+}
 }

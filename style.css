@@ -349,8 +349,7 @@
         font-size: 1.2rem;
     }
     .footer{
-    color: rgb(151, 151, 151);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin_top: 2rem;
     font-size: 12px;
 }
 }

@@ -27,3 +27,9 @@ form.addEventListener('submit', (e) => {
         }  
     }
 })
+    document.querySelectorAll('.input1').forEach(input => {
+    input.addEventListener('keypress', function(e) {
+        if (!/[0-9]/.test(e.key)) {
+            e.preventDefault();
+        }
+    });

@@ -2,8 +2,8 @@ const form = document.querySelector(".right");
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const height = parseInt(document.querySelector('#height').value);
-    const weight = parseInt(document.querySelector('#weight').value);
+   const height = parseFloat(document.querySelector('#height').value.replace(',', '.'));
+    const weight = parseFloat(document.querySelector('#weight').value.replace(',', '.'));
     const result = document.querySelector('#result');
     const comment = document.querySelector('#comment');
 
